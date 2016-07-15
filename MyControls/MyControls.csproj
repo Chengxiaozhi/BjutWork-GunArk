@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8989EB4-FF8A-49D3-930D-8ABE384ABB76}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyControls</RootNamespace>
+    <AssemblyName>MyControls</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KeyBorad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KeyBorad.Designer.cs">
+      <DependentUpon>KeyBorad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyDataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyDataGridView.Designer.cs">
+      <DependentUpon>MyDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Switch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Switch.Designer.cs">
+      <DependentUpon>Switch.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="KeyBorad.resx">
+      <DependentUpon>KeyBorad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyDataGridView.resx">
+      <DependentUpon>MyDataGridView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Switch.resx">
+      <DependentUpon>Switch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dialog_close_32px_1173781_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_副本.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finger_test_022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextStep0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drink_test1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextStep01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finger_test_0221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drink_test_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finger_test_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nextStep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btncheckoff2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btncheckon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backspace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maohao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finger_check.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

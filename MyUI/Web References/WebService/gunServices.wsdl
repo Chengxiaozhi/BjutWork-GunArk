@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://webserviceImpl.gunark.bjut.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://webservice.gunark.bjut.com/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="gunServices" targetNamespace="http://webserviceImpl.gunark.bjut.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://webservice.gunark.bjut.com/" location="http://172.18.1.217:8080/ssh/services/gunServices?wsdl=GunServices.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="gunServicesSoapBinding" type="ns1:GunServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getApplyBulletInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getApplyBulletInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getApplyBulletInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGunPosNotOnGunark">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setGunPosNotOnGunark">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setGunPosNotOnGunarkResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setRejectDeleteGunark">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setRejectDeleteGunark">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setRejectDeleteGunarkResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setgunExport">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setgunExport">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setgunExportResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGunPositionInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getGunPositionInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getGunPositionInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTaskDetail">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getTaskDetail">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getTaskDetailResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMagazineStock">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setMagazineStock">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setMagazineStockResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setChangePositionSuccess">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setChangePositionSuccess">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setChangePositionSuccessResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="closeDoor">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="closeDoor">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="closeDoorResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getUser">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getUserResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadOpenMessage">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="uploadOpenMessage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="uploadOpenMessageResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGunarkGroupGunBullet">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getGunarkGroupGunBullet">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getGunarkGroupGunBulletResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setSynInfoSuccess">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setSynInfoSuccess">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setSynInfoSuccessResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGunBeScrap">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setGunBeScrap">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setGunBeScrapResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGunBeSeal">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setGunBeSeal">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setGunBeSealResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGunPositionSeal">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setGunPositionSeal">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setGunPositionSealResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setgunLuggage">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setgunLuggage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setgunLuggageResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBulletTaskState">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getBulletTaskState">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBulletTaskStateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getUserPrivilege">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getUserPrivilege">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getUserPrivilegeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUrgentMission">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setUrgentMission">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setUrgentMissionResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserByUserID">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getUserByUserID">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getUserByUserIDResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUrgentBulletTask">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setUrgentBulletTask">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setUrgentBulletTaskResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reviewCancelTask">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="reviewCancelTask">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="reviewCancelTaskResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setOnline">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setOnline">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setOnlineResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reviewTask">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="reviewTask">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="reviewTaskResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateTaskStatusById">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="updateTaskStatusById">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="updateTaskStatusByIdResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOnDuty">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getOnDuty">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getOnDutyResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGunOnPosition">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setGunOnPosition">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setGunOnPositionResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setgunInUse">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setgunInUse">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setgunInUseResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFingerUserInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getFingerUserInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getFingerUserInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGunNotOnPosition">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setGunNotOnPosition">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setGunNotOnPositionResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUrgentGunBulletTaskNew">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setUrgentGunBulletTaskNew">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setUrgentGunBulletTaskNewResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserInfoDetail">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getUserInfoDetail">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getUserInfoDetailResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGunInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getGunInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getGunInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setDoingTask">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setDoingTask">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setDoingTaskResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setMagazineInfoCheck">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setMagazineInfoCheck">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setMagazineInfoCheckResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGunarkTaskPass">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setGunarkTaskPass">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setGunarkTaskPassResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getApplyBulletDetailInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getApplyBulletDetailInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getApplyBulletDetailInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGunarkMessageCode">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getGunarkMessageCode">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getGunarkMessageCodeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rejectCancelTask">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="rejectCancelTask">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="rejectCancelTaskResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cancelAlarm">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="cancelAlarm">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cancelAlarmResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAlarmRecord">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getAlarmRecord">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAlarmRecordResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSynInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getSynInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getSynInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setgunarkcheckingSuccess">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setgunarkcheckingSuccess">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setgunarkcheckingSuccessResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setTurn">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setTurn">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setTurnResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setgunpositionLuggage">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setgunpositionLuggage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setgunpositionLuggageResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserIfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getUserIfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getUserIfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setgunpositionUnLuggage">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setgunpositionUnLuggage">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setgunpositionUnLuggageResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setFinishTask">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setFinishTask">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setFinishTaskResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGunInStore">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setGunInStore">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setGunInStoreResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGunarkTaskState">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getGunarkTaskState">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getGunarkTaskStateResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getUnitInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getUnitInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getUnitInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCautionNum">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getCautionNum">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getCautionNumResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getMagazineInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getMagazineInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getMagazineInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGunarkInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getGunarkInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getGunarkInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUrgentGunTask">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setUrgentGunTask">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setUrgentGunTaskResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApplyMagazineDetailInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getApplyMagazineDetailInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getApplyMagazineDetailInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGunarkList">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getGunarkList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getGunarkListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setMaintainconfig">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setMaintainconfig">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setMaintainconfigResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApplyBulletGunDetailInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getApplyBulletGunDetailInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getApplyBulletGunDetailInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUrgentGunBulletTask">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setUrgentGunBulletTask">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setUrgentGunBulletTaskResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setOffline">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setOffline">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setOfflineResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setTemperature">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setTemperature">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setTemperatureResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rejectTask">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="rejectTask">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="rejectTaskResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="setAlarm">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setAlarm">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setAlarmResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGunBeAllot">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setGunBeAllot">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setGunBeAllotResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setFingerUserInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setFingerUserInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setFingerUserInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getApplyGunarkDetailInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getApplyGunarkDetailInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getApplyGunarkDetailInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSynGunarkInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getSynGunarkInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getSynGunarkInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setGunarkDeleteTaskPass">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setGunarkDeleteTaskPass">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setGunarkDeleteTaskPassResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getTaskInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getTaskInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getTaskInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setRejectAddGunark">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setRejectAddGunark">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setRejectAddGunarkResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getApplyGunarkInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getApplyGunarkInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getApplyGunarkInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reviewModifyTask">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="reviewModifyTask">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="reviewModifyTaskResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="gunServices">
+    <wsdl:port name="GunServicesImplPort" binding="tns:gunServicesSoapBinding">
+      <soap:address location="http://172.18.1.217:8080/ssh/services/gunServices" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
