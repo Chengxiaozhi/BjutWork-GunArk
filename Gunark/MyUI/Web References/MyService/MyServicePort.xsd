@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service.edu.bjut.cn/" targetNamespace="http://service.edu.bjut.cn/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="downloadFile" type="tns:downloadFile" />
+  <xs:element name="downloadFileResponse" type="tns:downloadFileResponse" />
+  <xs:element name="getConn" type="tns:getConn" />
+  <xs:element name="getConnResponse" type="tns:getConnResponse" />
+  <xs:element name="getCurrentTime" type="tns:getCurrentTime" />
+  <xs:element name="getCurrentTimeResponse" type="tns:getCurrentTimeResponse" />
+  <xs:element name="getFileName" type="tns:getFileName" />
+  <xs:element name="getFileNameResponse" type="tns:getFileNameResponse" />
+  <xs:element name="getVersion" type="tns:getVersion" />
+  <xs:element name="getVersionResponse" type="tns:getVersionResponse" />
+  <xs:element name="uploadFile" type="tns:uploadFile" />
+  <xs:element name="uploadFileResponse" type="tns:uploadFileResponse" />
+  <xs:complexType name="getFileName">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getFileNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="downloadFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="downloadFileResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uploadFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="uploadFileResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCurrentTime">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getCurrentTimeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getVersion">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getVersionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getConn">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getConnResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

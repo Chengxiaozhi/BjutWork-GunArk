@@ -1,0 +1,15 @@
+E:\一体柜\Gunark_01\MyUI\obj\Debug\MyUI.exe
+E:\一体柜\Gunark_01\MyUI\obj\Debug\MyUI.pdb
+E:\一体柜\Gunark_01\MyUI\bin\Debug\MyUI.exe
+E:\一体柜\Gunark_01\MyUI\bin\Debug\MyUI.pdb
+E:\一体柜\Gunark_01\MyUI\bin\Debug\Guark.BLL.dll
+E:\一体柜\Gunark_01\MyUI\bin\Debug\MyControls.dll
+E:\一体柜\Gunark_01\MyUI\bin\Debug\skincrafter_.net2.0_vs2008.dll
+E:\一体柜\Gunark_01\MyUI\bin\Debug\Tools.dll
+E:\一体柜\Gunark_01\MyUI\bin\Debug\MyControls.pdb
+E:\一体柜\Gunark_01\MyUI\bin\Debug\Guark.BLL.pdb
+E:\一体柜\Gunark_01\MyUI\bin\Debug\Tools.pdb
+E:\一体柜\Gunark_01\MyUI\obj\Debug\ResolveAssemblyReference.cache
+E:\一体柜\Gunark_01\MyUI\obj\Debug\MyUI.Form1.resources
+E:\一体柜\Gunark_01\MyUI\obj\Debug\MyUI.Properties.Resources.resources
+E:\一体柜\Gunark_01\MyUI\obj\Debug\Form1.cs.csproj.GenerateResource.Cache
